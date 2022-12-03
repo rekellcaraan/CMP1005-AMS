@@ -1,30 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using AMSLibrary.Models;
-using CMP1005_AMSApiService.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
-namespace CMP1005_AMSApiService.Controllers;
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-[ApiController]
-[Route("[controller]")]
-public class AttendanceController : ControllerBase
+namespace CMP1005_AMSApiService.Controllers
 {
-    private readonly AttendanceDBContext dbContext;
-
-    public AttendanceController(AttendanceDBContext dbContext)
+    [Route("[controller]")]
+    public class AttendanceController : ControllerBase
     {
-        this.dbContext = dbContext;
-    }
+        // GET: api/values
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2" };
+        }
 
-    [HttpGet("AllAttendance")]
-    public async Task<ActionResult<IEnumerable<Attendance>>> GetAllAttendance()
-    {
-        var list = await dbContext.Attendances.ToListAsync();
+        // GET api/values/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
 
-        if (list.Count > 0)
-            return list;
+        // POST api/values
+        [HttpPost]
+        public void Post([FromBody]string value)
+        {
+        }
 
-        return NotFound();
+        // PUT api/values/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody]string value)
+        {
+        }
+
+        // DELETE api/values/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
 }
 
