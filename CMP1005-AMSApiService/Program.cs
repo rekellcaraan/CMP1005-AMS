@@ -1,4 +1,5 @@
-﻿using CMP1005_AMSApiService.Data;
+﻿using AMSLibrary.Models;
+using System.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

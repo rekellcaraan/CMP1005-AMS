@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Data.Entity;
+//using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 namespace AMSLibrary.Models;
 
 public class Attendance
@@ -20,16 +21,16 @@ public class Attendance
 	public IEnumerable<Attendee>? Attendees { get; set; }
 }
 
-public interface IAttendance: IDisposable
+public interface IAttendanceDBContext : IDisposable
 {
 	DbSet<Attendance>? Attendances { get; }
 	int SaveChanges();
 	void MarkAsModified(Attendance attendance);
 }
 
-public class AttendanceDBContext : DbContext, IAttendance
+public class AttendanceDBContext : DbContext, IAttendanceDBContext
 {
-	public AttendanceDBContext() : base("name=AttendanceDBContext")
+	public AttendanceDBContext() : base()
 	{
 
 	}
