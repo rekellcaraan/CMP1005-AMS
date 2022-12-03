@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CMP1005-AMSApiService/1.0.0": {
+        "runtime": {
+          "CMP1005-AMSApiService.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CMP1005-AMSApiService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

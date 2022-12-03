@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CMP1005-AMSApiService.props" />
+</Project>

@@ -1,0 +1,7 @@
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/CMP1005-AMSApiService
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/appsettings.Development.json
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/appsettings.json
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/CMP1005-AMSApiService.dll
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/CMP1005-AMSApiService.deps.json
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/CMP1005-AMSApiService.runtimeconfig.json
+/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/Release/net6.0/PubTmp/Out/CMP1005-AMSApiService.pdb
