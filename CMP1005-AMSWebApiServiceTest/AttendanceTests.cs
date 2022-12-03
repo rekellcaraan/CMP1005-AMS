@@ -6,6 +6,6 @@ public class AttendanceTest
     [TestMethod]
     public void WhenGettingAllAvailableGatherings_ThenListOfGatheringsWillBeRetrieved()
     {
-
+        
     }
 }
