@@ -4,14 +4,14 @@
     "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj": {}
   },
   "projects": {
-    "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj": {
+    "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
-        "projectName": "CMP1005-AMSApiService",
-        "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+        "projectUniqueName": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj",
+        "projectName": "AMSLibrary",
+        "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj",
         "packagesPath": "/Users/rekell.caraan/.nuget/packages/",
-        "outputPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/",
+        "outputPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rekell.caraan/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,86 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+        "projectName": "CMP1005-AMSApiService",
+        "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+        "packagesPath": "/Users/rekell.caraan/.nuget/packages/",
+        "outputPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rekell.caraan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj": {
+                "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
