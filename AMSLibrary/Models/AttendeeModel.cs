@@ -3,6 +3,8 @@ namespace AMSLibrary.Models;
 
 public class Attendee
 {
+	public Guid Id { get; set; }
+
 	// Last name of the Attendee
 	public string? LastName { get; set; }
 

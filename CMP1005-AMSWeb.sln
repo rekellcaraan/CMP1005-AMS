@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP1005-AMSWebApiServiceTest", "..\..\Documents\Cambrian\CMP1005 - Adv Web\CMP1005-AMSWebApiServiceTest\CMP1005-AMSWebApiServiceTest.csproj", "{EAC432E7-2705-4008-9532-7D35FEBEB2EF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMSLibrary", "AMSLibrary\AMSLibrary.csproj", "{B211EE11-9820-4374-83D3-7ADA36F2A662}"
-EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CMP1005-AMSWebApiService", "..\..\Documents\Cambrian\CMP1005 - Adv Web\CMP1005-AMS\CMP1005-AMS\CMP1005-AMSApiService\CMP1005-AMSWebApiService.csproj", "{C863321C-AF15-453B-87D2-FDF5008E7423}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP1005-AMSWebApiService", "CMP1005-AMSApiService\CMP1005-AMSWebApiService.csproj", "{324E55F2-E9E3-4AED-B524-F035288266C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP1005-AMSWebApiServiceTest", "CMP1005-AMSWebApiServiceTest\CMP1005-AMSWebApiServiceTest.csproj", "{B4A7C711-A15F-47BF-A215-0BD1B2618673}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CMP1005-AMSWebApiServiceTest", "..\..\Documents\Cambrian\CMP1005 - Adv Web\CMP1005-AMSWebApiServiceTest\CMP1005-AMSWebApiServiceTest.csproj", "{C0A36F29-323D-43CD-9559-4E501BFDAC8B}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CMP1005-AMSWebApiService", "..\..\Documents\Cambrian\CMP1005 - Adv Web\CMP1005-AMS\CMP1005-AMS\CMP1005-AMSApiService\CMP1005-AMSWebApiService.csproj", "{CC9A71B9-FC32-4983-8A51-28FB81FCD241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMP1005-AMSWebApp", "CMP1005-AMSWebApp\CMP1005-AMSWebApp.csproj", "{2420AF23-0317-418C-8105-D79D52672B10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EAC432E7-2705-4008-9532-7D35FEBEB2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAC432E7-2705-4008-9532-7D35FEBEB2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAC432E7-2705-4008-9532-7D35FEBEB2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAC432E7-2705-4008-9532-7D35FEBEB2EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B211EE11-9820-4374-83D3-7ADA36F2A662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B211EE11-9820-4374-83D3-7ADA36F2A662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B211EE11-9820-4374-83D3-7ADA36F2A662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B211EE11-9820-4374-83D3-7ADA36F2A662}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C863321C-AF15-453B-87D2-FDF5008E7423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C863321C-AF15-453B-87D2-FDF5008E7423}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C863321C-AF15-453B-87D2-FDF5008E7423}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C863321C-AF15-453B-87D2-FDF5008E7423}.Release|Any CPU.Build.0 = Release|Any CPU
 		{324E55F2-E9E3-4AED-B524-F035288266C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{324E55F2-E9E3-4AED-B524-F035288266C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{324E55F2-E9E3-4AED-B524-F035288266C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +33,18 @@ Global
 		{B4A7C711-A15F-47BF-A215-0BD1B2618673}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4A7C711-A15F-47BF-A215-0BD1B2618673}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4A7C711-A15F-47BF-A215-0BD1B2618673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A36F29-323D-43CD-9559-4E501BFDAC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A36F29-323D-43CD-9559-4E501BFDAC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A36F29-323D-43CD-9559-4E501BFDAC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A36F29-323D-43CD-9559-4E501BFDAC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9A71B9-FC32-4983-8A51-28FB81FCD241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9A71B9-FC32-4983-8A51-28FB81FCD241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9A71B9-FC32-4983-8A51-28FB81FCD241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9A71B9-FC32-4983-8A51-28FB81FCD241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2420AF23-0317-418C-8105-D79D52672B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2420AF23-0317-418C-8105-D79D52672B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2420AF23-0317-418C-8105-D79D52672B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2420AF23-0317-418C-8105-D79D52672B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

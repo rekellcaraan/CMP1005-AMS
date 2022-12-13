@@ -1,0 +1,35 @@
+@page
+@model CMP1005_AMSWebApp.Pages.AttendanceSummaryModelModel
+@{
+    ViewData["Title"] = "Attendance Summary";
+}
+
+<h1>ATTENDANCE SUMMARY</h1>
+<p>
+    The following table below shows the total attendees per gathering/meeting/event happening per schedule.
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Schedule</th>
+            <th scope="col">Gathering/Meeting/Event</th>
+            <th scope="col">Total Attendees</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            @*<th scope="row">1</th>*@
+        </tr>
+        <tr>
+            @*<th scope="row">2</th>*@
+        </tr>
+        <tr>
+            @*<th scope="row">3</th>*@
+        </tr>
+    </tbody>
+</table>
+<a href="/NewGatheringModel" class="btn btn-primary">Create a new gathering/meeting</a>
+<a href="/ModifyGatheringModel" class="btn btn-primary">Update</a>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

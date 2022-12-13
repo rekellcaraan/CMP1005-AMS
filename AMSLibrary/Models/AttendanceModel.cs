@@ -5,6 +5,8 @@ namespace AMSLibrary.Models;
 
 public class Attendance
 {
+	public Guid Id { get; set; }
+
 	// Gathering/Meeting Date and Time
 	public DateTime GatheringDate { get; set; }
 
