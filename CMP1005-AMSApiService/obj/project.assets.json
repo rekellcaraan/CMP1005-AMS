@@ -9920,11 +9920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+      "projectUniqueName": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
       "projectName": "CMP1005-AMSApiService",
-      "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+      "projectPath": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
       "packagesPath": "/Users/rekell.caraan/.nuget/packages/",
-      "outputPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/obj/",
+      "outputPath": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/CMP1005-AMSApiService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rekell.caraan/.nuget/NuGet/NuGet.Config"
@@ -9940,8 +9940,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj": {
-              "projectPath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/AMSLibrary/AMSLibrary.csproj"
+            "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/AMSLibrary/AMSLibrary.csproj": {
+              "projectPath": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/AMSLibrary/AMSLibrary.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Et9S5cv4/CqaX0PpJ4ldzLBsEHtRwmHxPrxuPNhG/YGJ6SiCn4upL+IGzjuWsFiJ3fAsQh7o6hQB4NnLeDDZw==",
+  "dgSpecHash": "NjZmyKxtnJNfAlkxdZ3Z++Tk0yumFCGXsN6/+R7uv2OVrH7fwHW5xjtAOWjVnKGBCh6gyKCxNabXy25UCfkhEQ==",
   "success": true,
-  "projectFilePath": "/Users/rekell.caraan/Documents/Cambrian/ISP1004 - Adv Android/ISP1004-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
+  "projectFilePath": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-AMS/CMP1005-AMS/CMP1005-AMSApiService/CMP1005-AMSWebApiService.csproj",
   "expectedPackageFiles": [
     "/Users/rekell.caraan/.nuget/packages/entityframework/6.0.0/entityframework.6.0.0.nupkg.sha512",
     "/Users/rekell.caraan/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
