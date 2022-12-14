@@ -20,29 +20,29 @@ namespace CMP1005_AMSApiService.Controllers
             amsdb = dbContext;
         }
 
-        // GET: ams/Attendance
+        // GET: ams/Gathering
         [HttpGet]
-        public async Task<ActionResult<Gathering>> GetAllAvailableGatherings()
+        public List<Gathering> GetAllAvailableGatherings()
         {
-            await Task.Delay(0);
-
-            return NotFound();
+            return amsdb.Gatherings.ToList();
         }
 
-        // POST: ams/Attendance
+
+        // POST: ams/Gathering
         [HttpPost]
         public void Post([FromBody] Gathering gathering)
         {
-
+            amsdb.Gatherings.Add(gathering);
+            amsdb.SaveChanges();
         }
 
-        // PUT: ams/Attendance/11
+        // PUT: ams/Gathering/11
         [HttpPut("{id}")]
         public void Put(Guid id, [FromBody] Gathering gathering)
         {
         }
 
-        // DELETE: api/Attendance/5
+        // DELETE: api/Gathering/2
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {
