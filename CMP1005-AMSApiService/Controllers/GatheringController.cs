@@ -23,19 +23,20 @@ namespace CMP1005_AMSApiService.Controllers
 
         // POST: ams/Attendance
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Gathering gathering)
         {
+
         }
 
         // PUT: ams/Attendance/11
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(Guid id, [FromBody] Gathering gathering)
         {
         }
 
         // DELETE: api/Attendance/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
         }
     }

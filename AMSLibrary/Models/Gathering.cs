@@ -1,11 +1,14 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace AMSLibrary.Models;
 
 public class Gathering
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid Id { get; set; }
 
     [Required]
@@ -15,17 +18,12 @@ public class Gathering
     public String? GatheringLabel { get; set; }
 
     public int AttendeesCount { get; set; }
-
-    public Gathering()
-    {
-        Id = new Guid();
-    }
 }
 
-public class GatheringDBContext : DbContext
-{
-    public GatheringDBContext(DbContextOptions<GatheringDBContext> options) : base(options) { }
+//public class GatheringDBContext : DbContext
+//{
+//    public GatheringDBContext(DbContextOptions<GatheringDBContext> options) : base(options) { }
 
-    public DbSet<Gathering> Gatherings { get; set; } = null!;
-}
+//    public DbSet<Gathering> Gatherings { get; set; } = null!;
+//}
 

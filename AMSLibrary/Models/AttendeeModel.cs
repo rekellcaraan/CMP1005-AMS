@@ -1,9 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace AMSLibrary.Models;
 
 public class Attendee
 {
-	public Guid Id { get; set; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public Guid Id { get; set; }
 
 	// Last name of the Attendee
 	public string? LastName { get; set; }
@@ -11,6 +16,7 @@ public class Attendee
 	// First name of the Attendee
 	public string? FirstName { get; set; }
 
+	[NotMapped]
 	// Role of the Attendee
 	public Roles.RoleType Role { get; set; }
 
