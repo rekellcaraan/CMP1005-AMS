@@ -11,5 +11,7 @@ public class AMSDBContext : DbContext
     public AMSDBContext(DbContextOptions<AMSDBContext> options) : base(options) { }
 
     public DbSet<Gathering> Gatherings { get; set; } = null!;
+    public DbSet<Attendance> Attendances { get; set; } = null!;
+    public DbSet<Attendee> Attendees { get; set; } = null!;
 }
 

@@ -14,7 +14,11 @@ builder.Services.AddSqlite<AMSDBContext>(connectionString);
 
 builder.Services.AddControllers();
 
+builder.Services.AddTransient<AMSDBContext>();
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 

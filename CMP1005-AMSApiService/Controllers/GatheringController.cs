@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AMSLibrary.Models;
+using CMP1005_AMSApiService.Data;
 
 namespace CMP1005_AMSApiService.Controllers
 {
@@ -12,6 +13,13 @@ namespace CMP1005_AMSApiService.Controllers
     [ApiController]
     public class GatheringController : ControllerBase
     {
+        private readonly AMSDBContext amsdb;
+
+        public GatheringController(AMSDBContext dbContext)
+        {
+            amsdb = dbContext;
+        }
+
         // GET: ams/Attendance
         [HttpGet]
         public async Task<ActionResult<Gathering>> GetAllAvailableGatherings()
