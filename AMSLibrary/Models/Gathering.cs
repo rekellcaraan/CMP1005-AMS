@@ -20,10 +20,4 @@ public class Gathering
     public int AttendeesCount { get; set; }
 }
 
-//public class GatheringDBContext : DbContext
-//{
-//    public GatheringDBContext(DbContextOptions<GatheringDBContext> options) : base(options) { }
-
-//    public DbSet<Gathering> Gatherings { get; set; } = null!;
-//}
 

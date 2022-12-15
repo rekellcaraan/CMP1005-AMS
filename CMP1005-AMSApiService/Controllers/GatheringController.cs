@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AMSLibrary.Models;
 using CMP1005_AMSApiService.Data;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace CMP1005_AMSApiService.Controllers
 {
@@ -40,12 +43,29 @@ namespace CMP1005_AMSApiService.Controllers
         [HttpPut("{id}")]
         public void Put(Guid id, [FromBody] Gathering gathering)
         {
+            if (id == gathering.Id)
+            {
+                try
+                {
+                    amsdb.SaveChanges();
+                }
+                catch (System.Data.Entity.Infrastructure.DbUpdateConcurrencyException)
+                {
+                    // TODO: return NotFound or throw
+                }
+            }
         }
 
         // DELETE: api/Gathering/2
         [HttpDelete("{id}")]
         public void Delete(Guid id)
         {
+            var gathering = amsdb.Gatherings.Find(id);
+            if (gathering != null)
+            {
+                amsdb.Gatherings.Remove(gathering);
+                amsdb.SaveChanges();
+            }
         }
     }
 }

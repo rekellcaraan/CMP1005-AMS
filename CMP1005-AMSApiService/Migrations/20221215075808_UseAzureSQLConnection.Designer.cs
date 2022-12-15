@@ -4,6 +4,7 @@ using CMP1005_AMSApiService.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CMP1005_AMSApiService.Migrations
 {
     [DbContext(typeof(AMSDBContext))]
-    partial class AMSDBContextModelSnapshot : ModelSnapshot
+    [Migration("20221215075808_UseAzureSQLConnection")]
+    partial class UseAzureSQLConnection
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -5,7 +5,13 @@
 }
 
 <h1>New Gathering/Meeting</h1>
-
+<form>
+    <p>
+        Gathering Name: <input type="text" asp-for="GatheringEvent.GatheringLabel" />
+        Gathering Date: <input type="text" asp-for="GatheringEvent.GatheringDate" />
+        Gathering Name: <input type="text" asp-for="GatheringEvent.AttendeesCount" />
+    </p>
+</form>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
