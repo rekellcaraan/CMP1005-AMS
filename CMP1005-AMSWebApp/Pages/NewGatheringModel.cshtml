@@ -8,9 +8,11 @@
 <form>
     <p>
         Gathering Name: <input type="text" asp-for="GatheringEvent.GatheringLabel" />
-        Gathering Date: <input type="text" asp-for="GatheringEvent.GatheringDate" />
-        Gathering Name: <input type="text" asp-for="GatheringEvent.AttendeesCount" />
     </p>
+    <p>Gathering Date: <input type="datetime" asp-for="GatheringEvent.GatheringDate" /></p>
+    <p>Gathering Delivery: <input type="text" asp-for="GatheringEvent.Delivery" /></p>
+    <p>Gathering Remarks: <input type="text" asp-for="GatheringEvent.Remarks" /></p>
+
 </form>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

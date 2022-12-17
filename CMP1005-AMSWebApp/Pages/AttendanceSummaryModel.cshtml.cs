@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using AMSLibrary.Models;
+using CMP1005_AMSWebApp.Models;
 
 namespace CMP1005_AMSWebApp.Pages
 {
     public class AttendanceSummaryModelModel : PageModel
     {
         [BindProperty]
-        public Gathering GatheringEvent { get; set; } = default!;
+        public GatheringModel GatheringEvent { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync()
         {
