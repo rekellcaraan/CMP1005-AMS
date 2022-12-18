@@ -13,7 +13,7 @@
         <tr>
             <th scope="col">Schedule</th>
             <th scope="col">Gathering/Meeting/Event</th>
-            <th scope="col">Total Attendees</th>
+            <th scope="col">Options</th>
         </tr>
     </thead>
     <tbody>
@@ -22,6 +22,7 @@
                 <tr>
                     <td>@Html.DisplayFor(modelItem => gathering.GatheringDate)</td>
                     <td>@Html.DisplayFor(modelItem => gathering.GatheringLabel)</td>
+                    <td><a asp-page="/ModifyGatheringModel" asp-route-id="@gathering.Id">Edit</a></td>
                 </tr>
             }
  

@@ -6,8 +6,17 @@
 
 <h1>Update or Delete a Gathering/Meeting</h1>
 <p>You can modify the current gathering/meeting or even delete it.</p>
-<form>
-   
+<p>
+    Gathering Name: <input type="text" asp-for="gathering.GatheringLabel" />
+</p>
+<p>Gathering Date: <input type="datetime" asp-for="gathering.GatheringDate" /></p>
+<p>Gathering Delivery: <input type="text" asp-for="gathering.Delivery" /></p>
+<p>Gathering Remarks: <input type="text" asp-for="gathering.Remarks" /></p>
+<form method="post">
+    <input type="hidden" asp-for="gathering.Id" />
+    <input type="submit" class="btn btn-primary" />
+    <a href="/AttendanceSummaryModel" class="btn btn-primary">Cancel</a>
+
 </form>
 
 @section Scripts {

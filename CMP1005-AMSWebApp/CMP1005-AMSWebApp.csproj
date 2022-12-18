@@ -23,5 +23,8 @@
     <ProjectReference Include="..\AMSLibrary\AMSLibrary.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\CMP1005-AMSApiService\CMP1005-AMSWebApiService.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

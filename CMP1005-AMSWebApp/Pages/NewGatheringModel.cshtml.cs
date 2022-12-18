@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CMP1005_AMSWebApp.Models;
 using CMP1005_AMSWebApp.Services;
+using CMP1005_AMSApiService.Data;
 
 namespace CMP1005_AMSWebApp.Pages
 {
