@@ -17,11 +17,13 @@
 <h1>New Gathering/Meeting</h1>
 <form>
     <p>
-        Gathering Name: <input type="text" asp-for="GatheringEvent.GatheringLabel" />
+        Gathering Name: <input type="text" asp-for="newGathering.GatheringLabel" />
     </p>
-    <p>Gathering Date: <input type="datetime" asp-for="GatheringEvent.GatheringDate" /></p>
-    <p>Gathering Delivery: <input type="text" asp-for="GatheringEvent.Delivery" /></p>
-    <p>Gathering Remarks: <input type="text" asp-for="GatheringEvent.Remarks" /></p>
+    <p>Gathering Date: <input type="datetime" asp-for="newGathering.GatheringDate" /></p>
+    <p>Gathering Delivery: <input type="text" asp-for="newGathering.Delivery" /></p>
+    <p>Gathering Remarks: <input type="text" asp-for="newGathering.Remarks" /></p>
+    <input type="submit" class="btn btn-primary" />
+    <a href="/AttendanceSummaryModel" class="btn btn-primary">Cancel</a>
 
 </form>
 @section Scripts {
