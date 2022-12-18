@@ -6,28 +6,25 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using AMSLibrary.Models;
 using CMP1005_AMSWebApp.Models;
+using CMP1005_AMSWebApp.Services;
 
 namespace CMP1005_AMSWebApp.Pages
 {
     public class AttendanceSummaryModelModel : PageModel
     {
+        private readonly AMSWebApiService _amswebapiServce;
+
+        public AttendanceSummaryModelModel(AMSWebApiService amswebapiService)
+        {
+            _amswebapiServce = amswebapiService;
+        }
+
         [BindProperty]
-        public GatheringModel GatheringEvent { get; set; } = default!;
+        public List<GatheringModel> AvailableGatherings { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync()
         {
-            var urlString = "https://amswebapiservice.azurewebsites.net/";
-            var httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(urlString);
-
-            await Task.Delay(0);
-
-            return Page();
-        }
-
-        public async Task<IActionResult> OnPostAsync()
-        {
-            await Task.Delay(0);
+            AvailableGatherings = await _amswebapiServce.GetAvailableGatherings();
 
             return Page();
         }
