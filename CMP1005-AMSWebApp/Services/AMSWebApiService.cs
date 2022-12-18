@@ -40,7 +40,7 @@ public class AMSWebApiService
         return availableGatherings!;
     }
 
-    public async void CreateNewGathering(GatheringModel newGathering)
+    public async Task CreateNewGathering(GatheringModel newGathering)
     {
         try
         {

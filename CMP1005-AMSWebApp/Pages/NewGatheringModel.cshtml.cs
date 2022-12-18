@@ -22,9 +22,14 @@ namespace CMP1005_AMSWebApp.Pages
         [BindProperty]
         public GatheringModel newGathering { get; set; } = default!;
 
-        public void OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
-            _amswebapiServce.CreateNewGathering(newGathering);
+            if (!ModelState.IsValid)
+                return Page();
+
+            await _amswebapiServce.CreateNewGathering(newGathering);
+
+            return RedirectToPage("/AttendanceSummaryModel");
         }
 
     }
