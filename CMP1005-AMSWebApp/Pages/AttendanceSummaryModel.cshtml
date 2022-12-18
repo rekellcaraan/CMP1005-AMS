@@ -17,15 +17,14 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            @*<th scope="row">1</th>*@
-        </tr>
-        <tr>
-            @*<th scope="row">2</th>*@
-        </tr>
-        <tr>
-            @*<th scope="row">3</th>*@
-        </tr>
+        @foreach (var gathering in Model.AvailableGatherings)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => gathering.GatheringDate)</td>
+                    <td>@Html.DisplayFor(modelItem => gathering.GatheringLabel)</td>
+                </tr>
+            }
+ 
     </tbody>
 </table>
 <a href="/NewGatheringModel" class="btn btn-primary">Create a new gathering/meeting</a>

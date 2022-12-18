@@ -20,7 +20,7 @@ namespace CMP1005_AMSWebApp.Pages
         }
 
         [BindProperty]
-        public List<GatheringModel> AvailableGatherings { get; set; } = default!;
+        public IEnumerable<GatheringModel> AvailableGatherings { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync()
         {
